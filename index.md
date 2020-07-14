@@ -31,6 +31,7 @@ An Earth system model is composed of models simulating the evolution of the atmo
 AUDIENCE
 
 This course is for graduate students at George Mason University in the MS Climate Science and PhD Climate Dynamics in the Department of Atmospheric Ocean and Earth Sciences at George Mason University. This course prepares learners to use Earth System Models in their research.
+
 {% comment %}
 LOCATION
 
