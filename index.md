@@ -24,22 +24,27 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 
 {% comment %}
 INTRODUCTION
+{% endcomment %}
 
 An Earth system model is composed of models simulating the evolution of the atmosphere, ocean, cryosphere, biosphere, and other components. Course introduces the component models, their interactions, and how they are used to predict the behavior of weather and climate on time scales that range from hours to centuries. Students will learn technical and scientific skills necessary to run an Earth system model and evaluate its output.
 
 {% comment %}
 AUDIENCE
+{% endcomment %}
 
 This course is for graduate students at George Mason University in the MS Climate Science and PhD Climate Dynamics in the Department of Atmospheric Ocean and Earth Sciences at George Mason University. This course prepares learners to use Earth System Models in their research.
 
 {% comment %}
 LOCATION
+{% endcomment %}
 
 {% comment %}
 DATE
+{% endcomment %}
 
 {% comment %}
 SPECIAL REQUIREMENTS
+{% endcomment %}
 
 
 <hr/>
