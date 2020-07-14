@@ -13,9 +13,9 @@ humandate: "Aug 25, 2020 - Dec 1, 2020"    # human-readable dates for the worksh
 humantime: "10:30am - 1:30 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2020-08-25      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2020-12-01        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Kathy Pegion","NONE"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["NONE1","NONE2"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["kpegion@gmu.edu","someoneelse@somewhere.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+instructor: ["Kathy Pegion"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["NONE1"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+email: ["kpegion@gmu.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
@@ -77,36 +77,25 @@ displayed if the 'eventbrite' field in the header is not set.
 {% endif %}
 
 
-<h2 id="general">General Information</h2>
+<h2 id="general">Course Syllabus</h2>
 
 {% comment %}
 INTRODUCTION
 
-Edit the general explanatory paragraph below if you want to change
-the pitch.
-{% endcomment %}
-{% if site.carpentry == "swc" %}
-{% include swc/intro.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/intro.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/intro.html %}
-{% endif %}
+An Earth system model is composed of models simulating the evolution of the atmosphere, ocean, cryosphere, biosphere, and other components. Course introduces the component models, their interactions, and how they are used to predict the behavior of weather and climate on time scales that range from hours to centuries. Students will learn technical and scientific skills necessary to run an Earth system model and evaluate its output.
+
+At the end of this course, students will be able to:
+<lr>Design and Run Earth System Model experiments for hypothesis driven research</lr>
+<lr>Identify different types of experiments from Earth System models and what they can tell us</lr>
+<lr>Analyze the output of an Earth System Model appropriately for a given type of experiment</lr>
+<lr>Utilize a high-performance computing system for performing Earth System Model experiments</lr>
+<lr>Use an Earth System model in their research
+
 
 {% comment %}
 AUDIENCE
 
-Explain who your audience is.  (In particular, tell readers if the
-workshop is only open to people from a particular institution.
-{% endcomment %}
-{% if site.carpentry == "swc" %}
-{% include swc/who.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/who.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/who.html %}
-{% endif %}
-
+This course is for graduate students at George Mason University in the MS Climate Science and PhD Climate Dynamics in the Department of Atmospheric Ocean and Earth Sciences at George Mason University. This course prepares learners to use Earth System Models in their research.
 {% comment %}
 LOCATION
 
@@ -142,7 +131,7 @@ address.
 {% elsif online == "true_private" %}
 <p id="where">
   <strong>Where:</strong> This training will take place online.
-  The instructors will provide you with the information you will need to connect to this meeting.
+  The instructor will provide you with the information you will need to connect to this .
 </p>
 {% endif %}
 
