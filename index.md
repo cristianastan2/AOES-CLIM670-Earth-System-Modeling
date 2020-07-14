@@ -57,27 +57,8 @@ It looks like you are setting up a website for a Software Carpentry curriculum b
 {% endif %}
 
 {% comment %}
-EVENTBRITE
 
-This block includes the Eventbrite registration widget if
-'eventbrite' has been set in the header.  You can delete it if you
-are not using Eventbrite, or leave it in, since it will not be
-displayed if the 'eventbrite' field in the header is not set.
-{% endcomment %}
-{% if page.eventbrite %}
-<strong>Some adblockers block the registration window. If you do not see the
-  registration box below, please check your adblocker settings.</strong>
-<iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="280px"
-  scrolling="auto">
-</iframe>
-{% endif %}
-
-
-<h2 id="general">Course Syllabus</h2>
+<h2 id="general">Course Syllabus </h2>
 
 {% comment %}
 INTRODUCTION
@@ -85,11 +66,13 @@ INTRODUCTION
 An Earth system model is composed of models simulating the evolution of the atmosphere, ocean, cryosphere, biosphere, and other components. Course introduces the component models, their interactions, and how they are used to predict the behavior of weather and climate on time scales that range from hours to centuries. Students will learn technical and scientific skills necessary to run an Earth system model and evaluate its output.
 
 At the end of this course, students will be able to:
-<lr>Design and Run Earth System Model experiments for hypothesis driven research</lr>
-<lr>Identify different types of experiments from Earth System models and what they can tell us</lr>
-<lr>Analyze the output of an Earth System Model appropriately for a given type of experiment</lr>
-<lr>Utilize a high-performance computing system for performing Earth System Model experiments</lr>
-<lr>Use an Earth System model in their research
+<ul>
+    <lr>Design and Run Earth System Model experiments for hypothesis driven research</lr>
+    <lr>Identify different types of experiments from Earth System models and what they can tell us</lr>
+    <lr>Analyze the output of an Earth System Model appropriately for a given type of experiment</lr>
+    <lr>Utilize a high-performance computing system for performing Earth System Model experiments</lr>
+    <lr>Use an Earth System model in their research</lr>
+</ul>
 
 
 {% comment %}
@@ -154,120 +137,13 @@ SPECIAL REQUIREMENTS
 Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
-  <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+  <strong>Materials:</strong> 
+  <ul>
+     <li>Computer with Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) </li>
+  </ul>
 </p>
 
 {% comment %}
-ACCESSIBILITY
-
-Modify the block below if there are any barriers to accessibility or
-special instructions.
-{% endcomment %}
-<p id="accessibility">
-  <strong>Accessibility:</strong>
-{% if online == "false" %}
-  We are committed to making this workshop
-  accessible to everybody. The workshop organizers have checked that:
-</p>
-<ul>
-  <li>The room is wheelchair / scooter accessible.</li>
-  <li>Accessible restrooms are available.</li>
-</ul>
-<p>
-  Materials will be provided in advance of the workshop and
-  large-print handouts are available if needed by notifying the
-  organizers in advance.  If we can help making learning easier for
-  you (e.g. sign-language interpreters, lactation facilities) please
-  get in touch (using contact details below) and we will
-  attempt to provide them.
-{% else %}
-  We are dedicated to providing a positive and accessible learning environment for all. Please
-  notify the instructors in advance of the workshop if you require any accommodations or if there is
-  anything we can do to make this workshop more accessible to you.
-</p>
-{% endif %}
-
-{% comment %}
-CONTACT EMAIL ADDRESS
-
-Display the contact email address set in the configuration file.
-{% endcomment %}
-<p id="contact">
-  <strong>Contact:</strong>
-  Please email
-  {% if page.email %}
-  {% for email in page.email %}
-  {% if forloop.last and page.email.size > 1 %}
-  or
-  {% else %}
-  {% unless forloop.first %}
-  ,
-  {% endunless %}
-  {% endif %}
-  <a href='mailto:{{email}}'>{{email}}</a>
-  {% endfor %}
-  {% else %}
-  to-be-announced
-  {% endif %}
-  for more information.
-</p>
-
-<p id="roles">
-  <strong>Roles:</strong>
-  To learn more about the roles at the workshop (who will be doing what),
-  refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
-</p>
-
-<hr/>
-
-{% comment%}
-CODE OF CONDUCT
-{% endcomment %}
-<h2 id="code-of-conduct">Code of Conduct</h2>
-
-<p>
-Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. This document also outlines how to report an incident if needed.
-</p>
-
-<p class="text-center">
-  <a href="https://goo.gl/forms/KoUfO53Za3apOuOK2">
-    <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
-  </a>
-</p>
-<hr/>
-
-
-{% comment %}
-Collaborative Notes
-
-If you want to use an Etherpad, go to
-
-https://pad.carpentries.org/YYYY-MM-DD-site
-
-where 'YYYY-MM-DD-site' is the identifier for your workshop,
-e.g., '2015-06-10-esu'.
-
-Note we also have a CodiMD (the open-source version of HackMD)
-available at https://codimd.carpentries.org
-{% endcomment %}
-{% if page.collaborative_notes %}
-<h2 id="collaborative_notes">Collaborative Notes</h2>
-
-<p>
-We will use this <a href="{{ page.collaborative_notes }}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
-</p>
-<hr/>
-{% endif %}
-
-
-{% comment %}
-SURVEYS - DO NOT EDIT SURVEY LINKS
-{% endcomment %}
-<h2 id="surveys">Surveys</h2>
-<p>Please be sure to complete these surveys before and after the workshop.</p>
-<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 
 <hr/>
 
