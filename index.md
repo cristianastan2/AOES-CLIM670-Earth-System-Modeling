@@ -65,16 +65,6 @@ INTRODUCTION
 
 An Earth system model is composed of models simulating the evolution of the atmosphere, ocean, cryosphere, biosphere, and other components. Course introduces the component models, their interactions, and how they are used to predict the behavior of weather and climate on time scales that range from hours to centuries. Students will learn technical and scientific skills necessary to run an Earth system model and evaluate its output.
 
-At the end of this course, students will be able to:
-<ul>
-    <lr>Design and Run Earth System Model experiments for hypothesis driven research</lr>
-    <lr>Identify different types of experiments from Earth System models and what they can tell us</lr>
-    <lr>Analyze the output of an Earth System Model appropriately for a given type of experiment</lr>
-    <lr>Utilize a high-performance computing system for performing Earth System Model experiments</lr>
-    <lr>Use an Earth System model in their research</lr>
-</ul>
-
-
 {% comment %}
 AUDIENCE
 
