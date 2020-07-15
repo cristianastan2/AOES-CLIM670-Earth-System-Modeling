@@ -24,26 +24,14 @@
        <h2>{{site.title}}</h2>
        {% endunless %}
        <h3>George Mason University, Department of Atmosphereic, Oceanic, and Earth Sciences</h3>
+
+       <strong>Location/Dates/Times:</strong> Online
+       <p>{{page.humandate}}</p>
+       <p>{% if page.humantime %}{{page.humantime}}{% endif %}</p>
+
+       strong>Instructor:</strong><a href="kathypegion.com">Prof. Kathy Pegion</a>
      </div>
 
-      <div class="row">
-        <div class="col-md-6">
-          {% if online == "true_public" %}
-          <p>Online (<a href="{{page.address}}">link</a>)</p>
-          {% elsif online == "true_private" %}
-          <p>Online</p>
-          {% endif %}
-          <p>{{page.humandate}}</p>
-          <p>{% if page.humantime %}{{page.humantime}}{% endif %}</p>
-        </div>
-        <div class="col-md-6">
-          <p>
-          <strong>Instructor:</strong>
-          <a href="kathypegion.com">Prof. Kathy Pegion</a>
-          </p>
-        </div>
-      </div>
 
     </div>
-  </div>
 </div>
