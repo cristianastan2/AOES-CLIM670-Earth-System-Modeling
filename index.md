@@ -48,8 +48,6 @@ It looks like you are setting up a website for a Software Carpentry curriculum b
 
 This is a graduate course in the MS Climate Science and PhD Climate Dynamics degree programs in the Department of Atmospheric Ocean and Earth Sciences at George Mason University. This course prepares learners to use Earth System Models in their research.
 
-<p> This course website is adapted from The Carpentries Workshop Template. Lessons use The Carpentries lesson template and style.</p>
 <h2 id="general">Schedule </h2>
 {% include aoes/schedule.html %}
 
-<hr/>
