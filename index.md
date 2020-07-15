@@ -20,6 +20,30 @@ collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g.
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
+{% comment %}
+Check DC curriculum
+{% endcomment %}
+
+{% if site.carpentry == "dc" %}
+{% unless site.curriculum == "dc-ecology" or site.curriculum == "dc-genomics" or site.curriculum == "dc-socsci" or site.curriculum == "dc-geospatial" %}
+<div class="alert alert-warning">
+It looks like you are setting up a website for a Data Carpentry curriculum but you haven't specified the curriculum type in the <code>_config.yml</code> file (current value in <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>dc-ecology</code>, <code>dc-genomics</code>, <code>dc-socsci</code>, or <code>dc-geospatial</code>). After editing this file, you need to run <code>make serve</code> again to see the changes reflected.
+</div>
+{% endunless %}
+{% endif %}
+
+{% comment %}
+Check SWC curriculum
+{% endcomment %}
+
+{% if site.carpentry == "swc" %}
+{% unless site.curriculum == "swc-inflammation" or site.curriculum == "swc-gapminder" %}
+<div class="alert alert-warning">
+It looks like you are setting up a website for a Software Carpentry curriculum but you haven't specified the curriculum type in the <code>_config.yml</code> file (current value in <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>swc-inflammation</code>, or <code>swc-gapminder</code>). After editing this file, you need to run <code>make serve</code> again to see the changes reflected.
+</div>
+{% endunless %}
+{% endif %}
+
 <h2 id="general">Course Information </h2>
 
 This is a graduate course in the MS Climate Science and PhD Climate Dynamics degree programs in the Department of Atmospheric Ocean and Earth Sciences at George Mason University. This course prepares learners to use Earth System Models in their research.
@@ -28,4 +52,32 @@ This is a graduate course in the MS Climate Science and PhD Climate Dynamics deg
 
 <hr/>
 
+{% comment %}
+SYLLABUS
+
+Show what topics will be covered.
+
+1. If your workshop is R rather than Python, remove the comment
+around that section and put a comment around the Python section.
+2. Some workshops will delete SQL.
+3. Please make sure the list of topics is synchronized with what you
+intend to teach.
+4. You may need to move the div's with class="col-md-6" around inside
+the div's with class="row" to balance the multi-column layout.
+
+This is one of the places where people frequently make mistakes, so
+please preview your site before committing, and make sure to run
+'tools/check' as well.
+{% endcomment %}
+<h2 id="syllabus">Syllabus</h2>
+
+{% if site.carpentry == "swc" %}
+{% include swc/syllabus.html %}
+{% elsif site.carpentry == "dc" %}
+{% include dc/syllabus.html %}
+{% elsif site.carpentry == "lc" %}
+{% include lc/syllabus.html %}
+{% endif %}
+
+<hr/>
 <hr/>
