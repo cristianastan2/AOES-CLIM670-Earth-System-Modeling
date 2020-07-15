@@ -49,35 +49,7 @@ It looks like you are setting up a website for a Software Carpentry curriculum b
 This is a graduate course in the MS Climate Science and PhD Climate Dynamics degree programs in the Department of Atmospheric Ocean and Earth Sciences at George Mason University. This course prepares learners to use Earth System Models in their research.
 
 <h2 id="general">Course Schedule </h2>
-
-<hr/>
-
-{% comment %}
-SYLLABUS
-
-Show what topics will be covered.
-
-1. If your workshop is R rather than Python, remove the comment
-around that section and put a comment around the Python section.
-2. Some workshops will delete SQL.
-3. Please make sure the list of topics is synchronized with what you
-intend to teach.
-4. You may need to move the div's with class="col-md-6" around inside
-the div's with class="row" to balance the multi-column layout.
-
-This is one of the places where people frequently make mistakes, so
-please preview your site before committing, and make sure to run
-'tools/check' as well.
-{% endcomment %}
-<h2 id="syllabus">Syllabus</h2>
-
-{% if site.carpentry == "swc" %}
-{% include swc/syllabus.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/syllabus.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/syllabus.html %}
-{% endif %}
+{% include aoes/schedule.html %}
 
 <hr/>
 <hr/>
