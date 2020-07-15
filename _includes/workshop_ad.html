@@ -14,13 +14,17 @@
 <div class="jumbotron">
 
   <div class="row">
-    <div class="col-md-6 col-md-offset-1">
-      <img src="{{ relative_root_path }}{% link /assets/img/esm.png %}" alt="Earth System Modeling Logo Image" /></img>
-    <div class="col-md-6 col-md-offset-1">
-      {% unless site.title == "Workshop Title" or site.title == "" %}
-      <h2>{{site.title}}</h1>
-      {% endunless %}
-      <h2>{{page.venue}}</h2>
+
+     <div class="col-md-6">
+     <img src="{{ relative_root_path }}{% link /assets/img/esm.png %}" alt="Earth System Modeling Logo Image" /></img>
+     </div>
+
+     <div class="col-md-6">
+       {% unless site.title == "Workshop Title" or site.title == "" %}
+       <h2>{{site.title}}</h1>
+       {% endunless %}
+       <h2>{{page.venue}}</h2>
+     </div>
 
       <div class="row">
         <div class="col-md-6">
