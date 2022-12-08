@@ -46,7 +46,7 @@ It looks like you are setting up a website for a Software Carpentry curriculum b
 
 <h2 id="general">Information </h2>
 
-CLIM 670 Earth System Modeling is a graduate course in the MS Climate Science and PhD Climate Dynamics in the [Department of Atmospheric Ocean and Earth Sciences](http://aoes.gmu.edu) at [George Mason University](https://www2.gmu.edu/) originally developed by [Prof. Kathy Pegion](https://science.gmu.edu/directory/kathleen-pegion).  This course prepares learners to use Earth System Models in their research.
+CLIM 670 Earth System Modeling is a graduate course in the MS Climate Science and PhD Climate Dynamics in the [Department of Atmospheric Ocean and Earth Sciences](http://aoes.gmu.edu) at [George Mason University](https://www2.gmu.edu/) originally developed by [Prof. Kathy Pegion](http://meteorology.ou.edu/member/kathy-pegion/).  This course prepares learners to use Earth System Models in their research.
 
 <h2 id="general">Schedule </h2>
 
